@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranked Resumes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        Resume Matcher
+    </nav>
+
+    <!-- Centered Content -->
+    <div class="main-container">
+        <div class="card">
+            <h1 style="margin-bottom: 20px;">Ranked Resumes</h1>
+
+            <table>
+                <tr>
+                    <th>Resume Name</th>
+                    <th>Match Score</th>
+                </tr>
+                {% for resume, score in ranked_resumes %}
+                <tr>
+                    <td>{{ resume }}</td>
+                    <td>{{ "%.2f" | format(score * 100) }}%</td>
+                </tr>
+                {% endfor %}
+            </table>
+
+            <a href="/" class="btn">Upload More Resumes</a>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

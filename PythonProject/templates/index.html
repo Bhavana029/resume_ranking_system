@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Matcher</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        Resume Ranking System
+    </nav>
+
+    <!-- Centered Content -->
+    <div class="main-container">
+        <div class="card">
+            <h2 style="margin-bottom: 10px; color: #333;">  Resume Matcher</h2>
+            <form action="/matcher" method="POST" enctype="multipart/form-data">
+
+                <!-- Job Description -->
+                <div class="form-group">
+                    <label>Job Description:</label>
+                    <textarea name="job_desc" rows="4" placeholder="Enter the job description..." required></textarea>
+                </div>
+
+                <!-- Resume Upload -->
+                <div class="form-group">
+                    <label>Upload Resumes:</label>
+                    <input type="file" name="resumes" multiple accept=".pdf" required>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit">Match Resumes</button>
+
+            </form>
+        </div>
+    </div>
+
+
+
+</body>
+</html>

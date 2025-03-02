@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    background: url('../images/bg-image.jpg') no-repeat center center/cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height:50px;
+background:black;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    font-weight: bold;
+    line-height: 50px;
+}
+
+/* Centering Container */
+.main-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding-top: 20px; /* To avoid overlap with navbar */
+}
+
+/* Card Layout */
+.card {
+
+    background:#f5faff;
+
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 50%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px; /* Increased spacing */
+}
+
+/* Form Fields */
+.form-group {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px; /* More spacing between label and input */
+}
+
+/* Labels */
+.form-group label {
+    font-weight: bold;
+    font-size: 16px;
+    color: black;
+}
+
+/* Textarea & Input */
+textarea, input {
+    width: 100%;
+    padding: 14px; /* Increased padding */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    background: #f5faff;
+    margin-bottom: 15px; /* Extra spacing between fields */
+}
+
+/* Button */
+button {
+    padding: 14px 20px;
+    background-color: #877b87;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background-color: #b0a2af;
+}
+
+/* Footer */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+th {
+    background-color: #c6bfb8;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+.btn {
+    display: inline-block;
+    padding: 12px 20px;
+    background-color: #877b87;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 15px;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #b0a2af;
+}
+.card:hover{
+background-color: #f4efe6;
+}
+.navbar:hover{
+
+}
