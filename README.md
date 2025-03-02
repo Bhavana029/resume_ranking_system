@@ -90,7 +90,7 @@ This project is licensed under the MIT License.
 ## 📬 Contact
 For queries, reach out via LinkedIn or GitHub.
 
-**GitHub Repository:** [GitHub Link](https://github.com/yourusername/resume-screening)
+**GitHub Repository:** [GitHub Link](https://bhavana029.github.io/resume_ranking_system)
 
 ---
 ✨ *Built with AI to simplify recruitment!*
